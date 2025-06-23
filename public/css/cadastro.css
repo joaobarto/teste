@@ -67,3 +67,177 @@ footer {
 body {
     padding-bottom: 60px;
 }
+
+/* Estilo para o formulário de cadastro */
+.modal-conteudo.cadastro-form {
+    background: linear-gradient(135deg, #fff 70%, #ffe5c2 100%);
+    box-shadow: 0 8px 32px 0 rgba(217, 112, 20, 0.15);
+    border-radius: 25px;
+    padding: 50px 35px 35px 35px;
+    width: 370px;
+    margin: 0 auto;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.modal-conteudo.cadastro-form h2 {
+    color: #D97014;
+    margin-bottom: 25px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.modal-conteudo.cadastro-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1.5px solid #D97014;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background: #fff9f3;
+    transition: border 0.2s;
+}
+
+.modal-conteudo.cadastro-form input:focus {
+    border: 2px solid #D97014;
+    outline: none;
+    background: #fff3e6;
+}
+
+#btn-cadastrar {
+    background: linear-gradient(90deg, #D97014 80%, #ffb46a 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(217,112,20,0.08);
+    transition: background 0.2s;
+}
+
+#btn-cadastrar:hover {
+    background: linear-gradient(90deg, #ffb46a 0%, #D97014 100%);
+}
+
+#btn-cancelar-cadastro {
+    background: transparent;
+    border: 1.5px solid #D97014;
+    color: #D97014;
+    padding: 10px 0;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+#btn-cancelar-cadastro:hover {
+    background: #ffe5c2;
+    color: #a34e00;
+}
+
+/* Centraliza o container principal na tela */
+.cadastro-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+/* Card do formulário */
+.cadastro-card {
+    background: linear-gradient(135deg, #fff 80%, #fff3e6 100%);
+    border-radius: 22px;
+    box-shadow: 0 6px 32px 0 rgba(217, 112, 20, 0.10);
+    padding: 40px 32px 32px 32px;
+    width: 370px;
+    max-width: 95vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+.cadastro-card h2 {
+    color: #D97014;
+    margin-bottom: 25px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.cadastro-card input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 16px;
+    border: 1.5px solid #D97014;
+    border-radius: 7px;
+    font-size: 1.08em;
+    background: #fff9f3;
+    transition: border 0.2s;
+}
+
+.cadastro-card input:focus {
+    border: 2px solid #D97014;
+    outline: none;
+    background: #fff3e6;
+}
+
+.cadastro-card button,
+.cadastro-card #btn-cadastrar {
+    background: linear-gradient(90deg, #D97014 80%, #ffb46a 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(217,112,20,0.08);
+    transition: background 0.2s;
+}
+
+.cadastro-card button:hover,
+.cadastro-card #btn-cadastrar:hover {
+    background: linear-gradient(90deg, #ffb46a 0%, #D97014 100%);
+}
+
+.cadastro-card .cadastro-link {
+    margin-top: 18px;
+    font-size: 0.98em;
+    color: #D97014;
+    text-align: center;
+}
+
+.cadastro-card .cadastro-link a {
+    color: #D97014;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.cadastro-card .cadastro-link a:hover {
+    color: #a34e00;
+}
+
+.cadastro-card img {
+    width: 110px;        /* ou o tamanho desejado */
+    height: 110px;       /* para garantir que fique circular */
+    border-radius: 50%;
+    object-fit: cover;   /* mantém a imagem centralizada e sem distorção */
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(217,112,20,0.08);
+}

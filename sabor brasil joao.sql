@@ -30,7 +30,7 @@ CREATE TABLE `empresa` (
 CREATE TABLE `publicacao` (
   `id_publicacao` int NOT NULL AUTO_INCREMENT,
   `foto` text,
-  `nome_pet` varchar(100) NOT NULL,
+  `nome_prato` varchar(100) NOT NULL,
   `local` varchar(100) DEFAULT NULL,
   `cidade` varchar(100) DEFAULT NULL,
   `usuarioid` int NOT NULL,
@@ -79,18 +79,19 @@ INSERT INTO `usuario` (`id`, `nome`, `email`, `nickname`, `senha`, `createdat`, 
 INSERT INTO `empresa` (`id_empresa`, `nome`, `logo`, `createdat`, `updatedat`) VALUES
 (1, 'Pet do Brasil', 'images/logo_pet_do_brasil.png', '2025-04-04 23:18:38', '2025-04-04 23:18:38');
 
-INSERT INTO `publicacao` (`id_publicacao`, `foto`, `nome_pet`, `local`, `cidade`, `usuarioid`, `createdat`, `updatedat`) VALUES
-(1, 'images/pet01.png', 'Luna', 'Parque Ibirapuera', 'São Paulo-SP', 1, '2025-04-04 23:18:38', '2025-04-04 23:18:38'),
-(2, 'images/pet02.png', 'Max', 'Praia de Copacabana', 'Rio de Janeiro-RJ', 2, '2025-04-04 23:18:38', '2025-04-04 23:18:38'),
-(3, 'images/pet03.png', 'Bella', 'Parque Barigui', 'Curitiba-PR', 3, '2025-04-04 23:18:38', '2025-04-04 23:18:38'),
-(4, '/images/1743824718500.jpg', 'pet', 'minas gerais', 'caratinga', 1, '2025-04-05 03:45:18', '2025-04-05 03:45:18');
+INSERT INTO `publicacao` (`id_publicacao`, `foto`, `nome_prato`, `local`, `cidade`, `usuarioid`, `createdat`, `updatedat`) VALUES
+(1, 'images/publicacao01.png', 'Título do prato 01', 'Local 01', 'Maceió-AL', 1, '2025-06-23 23:18:38', '2025-06-23 23:50:12'),
+(2, 'images/publicacao02.png', 'Título do prato 02', 'Local 02', 'Maceió-AL', 2, '2025-06-23 23:18:38', '2025-06-23 23:50:12'),
+(3, 'images/publicacao03.png', 'Título do prato 03', 'Local 03', 'Maceió-AL', 4, '2025-06-23 23:18:38', '2025-06-23 23:50:12');
+
 
 INSERT INTO `comentario` (`id`, `usuarioid`, `publicacaoid`, `texto`, `data_comentario`) VALUES
-(1, 1, 4, 'oi', '2025-04-05 00:46:31'),
-(8, 4, 4, 'oioi', '2025-04-07 16:36:25');
+(1, 1, 2, 'oi', '2025-06-07 00:46:31'),
+(8, 4, 3, 'oioi', '2025-06-07 16:36:25');
 
 INSERT INTO `curtida` (`id`, `usuarioid`, `publicacaoid`, `tipo_interacao`) VALUES
-(1, 1, 4, 'like'),
+(1, 1, 2, 'like'),
 (3, 4, 1, 'like'),
 (10, 4, 3, 'none'),
-(18, 4, 4, 'deslike');
+(18, 4, 2, 'deslike');
+

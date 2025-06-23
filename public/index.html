@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor Brasil</title>
-    <link rel="shortcut icon" href="images/logo_sabor_brasil.jpg" type="image/x-icon">
+    <title>Sabor do Brasil</title>
+    <link rel="shortcut icon" href="images/logo_sabor_do_brasil.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
         <aside class="perfil">
-            <img id="logo-empresa" src="images/logo_sabor_brasil.jpg" alt="Logo Sabor Brasil">
-            <h2 id="nome-empresa">Sabor Brasil</h2>
+            <img id="logo-empresa" src="images/logo_sabor_do_brasil.png" alt="Logo Sabor Brasil">
+            <h2 id="nome-empresa">Sabor do Brasil</h2>
             <hr style="border-color: #D97014;">
-            <p>Likes: <span id="total-likes">0</span></p>
-            <p>Dislikes: <span id="total-dislikes">0</span></p>
+            <div class="likes-row">
+                <span>Likes: <span id="total-likes">0</span></span>
+                
+                <span>Dislikes: <span id="total-dislikes">0</span></span>
+            </div>
         </aside>
 
         <main class="principal">
-            <h2>Publicações</h2>
-            <!-- Os posts serão carregados dinamicamente aqui -->
+            <h2 class="titulo-publicacoes">Publicações</h2>
+            <div class="publicacao">
+                <h3 class="titulo-prato">Título do prato 01</h3>
+                <img src="images/publicacao01.png" alt="Imagem do prato">
+                <!-- ...restante do conteúdo... -->
+            </div>
+            <!-- publicações aqui -->
         </main>
 
         <aside class="login">
@@ -31,14 +39,14 @@
     </div>
 
     <footer>
-        <p>Sabor Brasil</p>
+        <p><strong>Sabor do Brasil</strong></p>
         <p class="social">
             <img src="images/Instagram.svg" alt="Instagram" width="20px">
             <img src="images/Twitter.svg" alt="Twitter" width="20px">
             <img src="images/Whatsapp.svg" alt="Whatsapp" width="20px">
             <img src="images/Globe.svg" alt="Globe" width="20px">
         </p>
-        <p>Copyright-2025</p>
+        <p></strong>Copyright-2025</strong></p>
     </footer>
 
     <!-- Modal de Login -->
